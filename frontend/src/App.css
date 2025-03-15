@@ -1,0 +1,107 @@
+/* App.css */
+/* This file contains additional styles for the React app beyond Tailwind */
+
+.App {
+    text-align: center;
+  }
+  
+  /* Animation for loading states */
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Custom scrollbar for code blocks */
+  .code-block {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .code-block::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .code-block::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .code-block::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .code-block::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Syntax highlighting colors for code snippets */
+  .code-keyword {
+    color: #8959a8;
+  }
+  
+  .code-string {
+    color: #718c00;
+  }
+  
+  .code-comment {
+    color: #8e908c;
+    font-style: italic;
+  }
+  
+  .code-function {
+    color: #4271ae;
+  }
+  
+  /* Transitions for UI elements */
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  /* Custom focus styles */
+  .custom-focus:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  }
+  
+  /* Repository card hover effect */
+  .repo-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .repo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Answer section styling */
+  .answer-section {
+    border-left: 4px solid #6366f1;
+    padding-left: 1rem;
+  }
+  
+  /* Mobile responsiveness adjustments */
+  @media (max-width: 640px) {
+    .responsive-padding {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 1.25rem;
+    }
+  }

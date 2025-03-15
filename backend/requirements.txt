@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langgraph
+neo4j
+huggingface_hub
+sentence_transformers
+gitpython
+pydantic
+requests
+python-dotenv
+langchain_ollama
+langchain_neo4j
+graphdatascience
